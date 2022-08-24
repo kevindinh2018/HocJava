@@ -112,37 +112,54 @@
             //     message = (" |Béo phì cấp độ 3" + "| Nguy cơ bệnh Nguy Hiểm");
             //  System.out.println(message);
 
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Mời bạn nhập mã khách hàng: ");
-            String codeUser = scanner.nextLine();
-            System.out.print("Mời bạn tổng tiền: ");
-            int totalPayment = scanner.nextInt();
-            int discountPercent = 0;
-            String categoryCodeUser = "";
+//            Scanner scanner = new Scanner(System.in);
+//            System.out.print("Mời bạn nhập mã khách hàng: ");
+//            String codeUser = scanner.nextLine();
+//            System.out.print("Mời bạn tổng tiền: ");
+//            int totalPayment = scanner.nextInt();
+//            int discountPercent = 0;
+//            String categoryCodeUser = "";
 
-            switch (codeUser) {
-                case "M":
-                case "m":
-                    discountPercent = 5;
-                    categoryCodeUser = "Member";
-                    break;
-                case "V":
-                case "v":
-                    discountPercent = 7;
-                    categoryCodeUser = "Vip";
-                    break;
-                case "D":
-                case "d":
-                    discountPercent = 15;
-                    categoryCodeUser = "Diamond";
-                    break;
-                default:
-                    System.out.print("Không đúng mã khách hàng");
-                    return;
-            }
-            totalPayment = (int) (totalPayment * ((float) (100 - discountPercent) / 100 ));
-            System.out.println("Thành viên thuộc loại " + categoryCodeUser);
-            System.out.println("Được ưu đãi giảm " + discountPercent + "%");
-            System.out.println("Số tiền cần phải thanh toán là " + totalPayment + " VNĐ");
+//            switch (codeUser) {
+//                case "M":
+//                case "m":
+//                    discountPercent = 5;
+//                    categoryCodeUser = "Member";
+//                    break;
+//                case "V":
+//                case "v":
+//                    discountPercent = 7;
+//                    categoryCodeUser = "Vip";
+//                    break;
+//                case "D":
+//                case "d":
+//                    discountPercent = 15;
+//                    categoryCodeUser = "Diamond";
+//                    break;
+//                default:
+//                    System.out.print("Không đúng mã khách hàng");
+//                    return;
+//            }
+//            totalPayment = (int) (totalPayment * ((float) (100 - discountPercent) / 100 ));
+//            System.out.println("Thành viên thuộc loại " + categoryCodeUser);
+//            System.out.println("Được ưu đãi giảm " + discountPercent + "%");
+//            System.out.println("Số tiền cần phải thanh toán là " + totalPayment + " VNĐ");
+
+//          5. Mảng
+//           Array => tất cả đều lưu 1 nơi, không thêm, xoá phần tử được
+//           Cách tạo và truyền các phần tử cho mảng
+             String [] arrNames = {"Tèo", "Tí", "Tủn", "Hoa", "Lan"};
+
+             //Lấy kích thước của mảng
+            //System.out.println("Kích thước của mảng là " + arrNames.length);
+
+            //Lấy giá trị phần tử theo index
+            //Vị trí đầu tiên sẽ có index = 0, vị trí cuối cùng sẽ là length -1
+            //System.out.println(arrNames[1]);
+            //arrNames[1] = "Tí update";
+            //System.out.println(arrNames[1]);
+
+            // Cách 2: tạo ra mảng nhưng chỉ biết số lượng
+            //String[] arrNames = new String[10];
         }
     }
