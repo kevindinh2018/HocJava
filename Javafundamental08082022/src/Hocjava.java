@@ -148,7 +148,7 @@
 //          5. Mảng
 //           Array => tất cả đều lưu 1 nơi, không thêm, xoá phần tử được
 //           Cách tạo và truyền các phần tử cho mảng
-             String [] arrNames = {"Tèo", "Tí", "Tủn", "Hoa", "Lan"};
+//             String [] arrNames = {"Tèo", "Tí", "Tủn", "Hoa", "Lan"};
 
              //Lấy kích thước của mảng
             //System.out.println("Kích thước của mảng là " + arrNames.length);
@@ -161,5 +161,55 @@
 
             // Cách 2: tạo ra mảng nhưng chỉ biết số lượng
             //String[] arrNames = new String[10];
+
+            //6. Vòng lặp for
+            // Biết qui trình, cách đếm trước, i++ chạy hết 1 vòng mới tăng lên 1
+            //for (int i = 0; i < 10; i++) {
+            //    System.out.println(i);
+            //for (int i = 10; (i >=0); i--){
+            //    System.out.println(i);
+            //}
+            // Kiem so chan tu 1-100
+            //for (int i = 1; i <= 100; i++) {
+            //    if(i % 2 == 0){
+            //        System.out.println(i);
+            //}
+            // Uoc la chia cho nhưng so nho hon no, chia het,
+            // tim so nguyen to
+            //Scanner sc = new Scanner(System.in);
+            //System.out.println ("Mời bạn nhập một số bất kỳ: ");
+            //int a = sc.nextInt();
+            //if (a < 2) {
+            //    System.out.println("Không phải là số nguyên tố");
+            //    return;
+            //}
+            //for (int i = 2; i < a ; i++) {
+            //    if (a % i == 0) {
+            //        System.out.println(a + " Không phải là số nguyên tố");
+            //        return;
+            //    }
+            //    }
+            //System.out.println(a + " Là số nguyên tố");
+
+            int [] arrNumber = {1,2,3,4,5,6,10,20,30,15,16,17,18,21,22,23};
+
+            //Kiếm số lớn nhất
+            //Kiếm số nhỏ nhất là số lẻ
+            int Max = 0;
+            int temp1 = 0;
+            int temp2 = 0;
+            for (int i = 0; i < 16; i++ ){
+                if (arrNumber[i+1] >= arrNumber[i]){
+                    temp1 = arrNumber[i+1];
+                }else
+                    temp1 = arrNumber[i];
+                Max = temp1;
+
+                System.out.println("Số lớn nhất là: " + Max);
+
+
+                // tao pull request va code tren branch
+            }
+
+            }
         }
-    }
