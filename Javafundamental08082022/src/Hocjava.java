@@ -194,23 +194,28 @@
             int [] arrNumber = {1,2,3,4,5,6,10,20,30,15,16,17,18,21,22,23};
 
             //Kiếm số lớn nhất
+
+        //    int Max = arrNumber[0];
+        //    for (int i = 0; i < arrNumber.length; i++ ) {
+        //        if (arrNumber[i] >= Max) {
+        //            Max = arrNumber[i];
+        //        }
+        //    }
+        //        System.out.println("Số lớn nhất là: " + Max);
+
             //Kiếm số nhỏ nhất là số lẻ
-            int Max = 0;
-            int temp1 = 0;
-            int temp2 = 0;
-            for (int i = 0; i < 16; i++ ){
-                if (arrNumber[i+1] >= arrNumber[i]){
-                    temp1 = arrNumber[i+1];
-                }else
-                    temp1 = arrNumber[i];
-                Max = temp1;
 
-                System.out.println("Số lớn nhất là: " + Max);
-
-
+            int Min = arrNumber[0];
+            for (int i = 0; i < arrNumber.length; i++){
+                if (arrNumber[i] <= Min) {
+                    Min = arrNumber[i];
+                    if (Min % 2 != 0) {
+                        System.out.println("Số lẻ nhỏ nhất là: " + Min);
+                    }
+                }
+            }
+            }
                 // tao pull request va code tren branch
                 // review va merge vao master
             }
 
-            }
-        }
