@@ -1,5 +1,7 @@
     import java.util.Scanner;
 
+    import static com.sun.tools.javac.jvm.PoolConstant.LoadableConstant.Int;
+
     public class Hocjava {
         public static void main(String[] args) {
             //comment
@@ -150,7 +152,7 @@
 //           Cách tạo và truyền các phần tử cho mảng
 //             String [] arrNames = {"Tèo", "Tí", "Tủn", "Hoa", "Lan"};
 
-             //Lấy kích thước của mảng
+            //Lấy kích thước của mảng
             //System.out.println("Kích thước của mảng là " + arrNames.length);
 
             //Lấy giá trị phần tử theo index
@@ -191,31 +193,105 @@
             //    }
             //System.out.println(a + " Là số nguyên tố");
 
-            int [] arrNumber = {1,2,3,4,5,6,10,20,30,15,16,17,18,21,22,23};
+            //    int [] arrNumber = {1,2,3,4,5,6,10,20,30,15,16,17,18,21,22,23};
 
             //Kiếm số lớn nhất
 
-        //    int Max = arrNumber[0];
-        //    for (int i = 0; i < arrNumber.length; i++ ) {
-        //        if (arrNumber[i] >= Max) {
-        //            Max = arrNumber[i];
-        //        }
-        //    }
-        //        System.out.println("Số lớn nhất là: " + Max);
+            //    int Max = arrNumber[0];
+            //    for (int i = 0; i < arrNumber.length; i++ ) {
+            //        if (arrNumber[i] > Max) {
+            //            Max = arrNumber[i];
+            //        }
+            //    }
+            //        System.out.println("Số lớn nhất là: " + Max);
 
             //Kiếm số nhỏ nhất là số lẻ
 
-            int Min = arrNumber[0];
-            for (int i = 0; i < arrNumber.length; i++){
-                if (arrNumber[i] <= Min) {
-                    Min = arrNumber[i];
-                    if (Min % 2 != 0) {
-                        System.out.println("Số lẻ nhỏ nhất là: " + Min);
-                    }
-                }
+            //    int Min = arrNumber[0];
+            //    for (int i = 0; i < arrNumber.length; i++){
+            //        if (arrNumber[i] < Min) {
+            //            Min = arrNumber[i];
+            //            if (Min % 2 != 0) {
+            //                System.out.println("Số lẻ nhỏ nhất là: " + Min);
+
+            //    int max, min;
+            //    max = min = arrNumber[0];
+
+            //    for (int i = 1; i < arrNumber.length; i++) {
+            //        if ((arrNumber[i]) > max) {
+            //            max = arrNumber[i];
+            //        } else if (arrNumber[i] < min && arrNumber[i] % 2 != 0){
+            //            min = arrNumber[i];
+            //    }
+            //            }
+            //            System.out.println("Số lớn nhất là :" + max);
+            //            System.out.println("Số nhỏ nhất và là số lẻ là :"+ min );
+
+            //    int index = arrNumber.length - 1;
+            //    while (index >= 0){
+            //        System.out.println(arrNumber[index--]);
+
+            //  Scanner sc = new Scanner(System.in);
+            //  int value = -1;
+            //  do {
+            //      System.out.println("Mời bạn nhập tuổi");
+            //      value = sc.nextInt();
+            //  }while (value < 0);
+            //  System.out.println("Bạn hiện tại " + value + " tuổi");
+
+            // fp (functional programing), oop, sau này chuyển về fp hết
+            // SOLID: 5 qui tắc của oop,
+            //1.Single responsibility principle : đơn năng.
+            //2.Open/closed principle: clone ra một class mới để chỉnh sửa.
+            //3.Liskov Substitution Principle: giữ nguyên tính chất.
+            //4.Interface Segregation Principle : just enough.
+            //5.Dependency inversion principle : tất cả chỉ phụ thuộc vào công thức chung.
+
+            // Hướng đối tượng
+            // Object (instance): đối tượng cụ thể (red dog) và class : nhóm (vd: dog)
+
+            //Định nghĩa ra object (instance)
+            // Animal cat = new Animal(weight:"1.2kg", height:"20cm");
+            //  System.out.println(cat.height);
+            //  System.out.println(cat.weight);
+            //  cat.run(action: "Chạy bằng 4 chân");
+
+            //Phương thức. function là gì
+            // Access modifier: phạm vi truy cập
+            // duplicate
+            //   print("xin chào");
+           // int data = plus(a:5, b:10);
+           // print(data + "");
+               }
+            // Định nghĩa phương thúc
+            // 1: Phạm vi truy cập (public, private, protected, default)
+            // 2: Giá trị trả về
+            // 3: Tên của phương thức (bắt đầu bằng động tự)
+            // 4: Tham số truyền vào
+
+            /*
+             * Print message
+             */
+
+             //private static void print(String message) {
+             //    System.out.print(message);
+            // Phương thức tính tổng khi xử lý xong trả về kết quả
+
+            //private static int plus(int a, int b) {
+            //    int result = a + b;
+            //    return result;
+
+
             }
-            }
+
+
+
+
+        }
+    }
+
+
                 // tao pull request va code tren branch
                 // review va merge vao master
-            }
+
 
